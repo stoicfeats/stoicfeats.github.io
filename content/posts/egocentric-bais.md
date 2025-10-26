@@ -61,9 +61,6 @@ that's egocentric bias — you remember your own effort vividly but underestimat
 - **mindfulness**: flag "i/me"-focused judgments
 
 <div class="tweet-grid">
-    {{< x user="bluewmist" id="1980171238267125992" data-theme="dark">}}
-    {{< x user="bluewmist" id="1980171238267125992" data-theme="dark">}}
-    {{< x user="bluewmist" id="1980171238267125992" data-theme="dark">}}
-    {{< tweet user="sam_niac" id="1980288299286642932" data-theme="dark">}}
+    {{< tweet user="bluewmist" id="1980171238267125992" data-theme="dark">}}
 </div>
 
