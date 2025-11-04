@@ -3,7 +3,7 @@ title: "blog"
 date: 2025-10-17T21:07:58+05:30
 weight: 5
 unlisted: true
-_build:
+build:
   list: false
   render: true
 ---
