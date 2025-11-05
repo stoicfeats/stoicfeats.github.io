@@ -4,8 +4,6 @@ date: 2025-10-25T11:31:21+05:30
 draft: false
 ---
 
-# Understanding DNS: From Domain Name to IP Address
-
 DNS, or Domain Name System, acts as the internet's phonebook. It converts easy-to-remember names like www.google.com into numerical IP addresses like 142.250.183.132 that computers use to communicate.
 
 ## Why DNS Exists
