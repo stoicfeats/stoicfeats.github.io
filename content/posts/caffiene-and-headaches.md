@@ -1,10 +1,8 @@
 ---
 title: "caffiene and headaches"
-date: 2025-10-25T11:31:21+05:30
+date: 2025-11-6T11:31:21+05:30
 draft: false
 ---
-
-
 
 ## 1. Is coffee a vasodilator or vasoconstrictor?
 - Coffee (caffeine) is a **vasoconstrictor**.
