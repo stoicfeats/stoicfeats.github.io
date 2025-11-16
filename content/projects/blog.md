@@ -1,7 +1,7 @@
 ---
 title: "blog"
 date: 2025-10-17T21:07:58+05:30
-weight: 5
+weight: 3
 unlisted: true
 build:
   list: false
