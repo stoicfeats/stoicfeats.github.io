@@ -43,6 +43,29 @@ Headaches and migraines result from disturbances in blood flow, nerves, and chem
 | **Tension Headache** | Muscle tightness in head, neck, shoulders | Dull, tight band-like pain | Stress, poor posture, dehydration, eye strain | Muscular tension and mild nerve irritation |
 | **Migraine** | Abnormal brain activity affecting blood vessels and trigeminal nerve | Throbbing, often one-sided, with nausea and sensitivity to light/sound | Hormonal changes, stress, sleep irregularities, certain foods | Blood vessel dilation, inflammation, neurochemical imbalance (serotonin, CGRP) |
 
+# 5. If caffiene is a vascoconstructor then why used in pre workouts and other things
+
+1. Caffeine = vasoconstrictor in the brain
+	•	Narrows brain blood vessels → reduces adenosine → increases alertness.
+	•	Makes you feel focused, awake, and sharp.
+
+2. But in the body/muscles it works differently
+	•	Boosts adrenaline → increases heart rate and blood flow to muscles.
+	•	Improves oxygen delivery and energy release.
+
+3. Why it’s in pre-workouts
+	•	Increases focus and mental alertness.
+	•	Raises adrenaline for more strength and energy.
+	•	Reduces fatigue so you can push harder.
+	•	Enhances mind–muscle connection.
+
+4. Does it affect all nerves the same?
+	•	No.
+	•	Brain → constriction + alertness.
+	•	Muscles/body → more blood flow and energy.
+
+
+
 ### Summary
 - **Tension headache** = muscle and stress-related.
 - **Migraine** = nerve, blood vessel, and brain chemistry-related.
