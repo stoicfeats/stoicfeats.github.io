@@ -1,0 +1,49 @@
+{{ define "main" }}
+{{ partial "back_link.html" .}}
+
+<h1>{{ .Title | lower }}</h1>
+
+{{ .Content }}
+
+{{/* Define the order of levels */}}
+{{ $levels := slice "beginner" "intermediate" "advanced" }}
+
+{{/* Range through defined levels */}}
+{{ range $levels }}
+  {{ $level := . }}
+  {{/* Use .Pages to get pages in the current section */}}
+  {{ $projects := where $.Pages "Params.level" $level }}
+  
+  {{ if gt (len $projects) 0 }}
+    <h3>{{ $level }}</h3>
+    <ul>
+      {{ range $projects }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title | lower }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
+
+{{/* Handle projects with other levels or no level */}}
+{{ $otherProjects := slice }}
+{{ range .Pages }}
+  {{/* Check if level is not set OR level is not in the defined list */}}
+  {{ if or (not .Params.level) (not (in $levels .Params.level)) }}
+    {{ $otherProjects = $otherProjects | append . }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len $otherProjects) 0 }}
+  <h3>others</h3>
+  <ul>
+    {{ range $otherProjects }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title | lower }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
+
+{{ end }}

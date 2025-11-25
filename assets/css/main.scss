@@ -258,28 +258,28 @@ details[open] summary {
     text-align: left;
 }
 
-// Rules for post pages to disable scrolling
-.section-posts,
-.section-static {
-    height: 100vh;
-    overflow: hidden;
-}
+// Rules for post pages to disable scrolling - REMOVED
+// .section-posts,
+// .section-static {
+//     height: 100vh;
+//     overflow: hidden;
+// }
 
-.section-posts article {
-    height: calc(100vh - 180px);
-    /* Account for header, footer, and margins */
-    overflow-y: auto;
-    padding-right: 10px;
-    /* Space for scrollbar */
-}
+// .section-posts article {
+//     height: calc(100vh - 180px);
+//     /* Account for header, footer, and margins */
+//     overflow-y: auto;
+//     padding-right: 10px;
+//     /* Space for scrollbar */
+// }
 
-.section-static .content-wrapper {
-    height: calc(100vh - 180px);
-    /* Account for header, footer, and margins */
-    overflow-y: auto;
-    padding-right: 10px;
-    /* Space for scrollbar */
-}
+// .section-static .content-wrapper {
+//     height: calc(100vh - 180px);
+//     /* Account for header, footer, and margins */
+//     overflow-y: auto;
+//     padding-right: 10px;
+//     /* Space for scrollbar */
+// }
 
 .site-footer a {
     text-decoration: none;
