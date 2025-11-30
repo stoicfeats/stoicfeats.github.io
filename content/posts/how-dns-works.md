@@ -167,16 +167,3 @@ www.example.com → CNAME → example.com → A → 192.0.2.1
 ```
 
 - DNSSEC adds signatures to verify response authenticity.
-
-## Quick Reference Table
-
-| Step | Who Involved | Action |
-|------|--------------|--------|
-| 1 | You | Type domain name |
-| 2 | Your computer | Checks cache/hosts |
-| 3 | Resolver | Checks its cache |
-| 4 | Root server | Points to TLD server |
-| 5 | TLD server | Points to authoritative server |
-| 6 | Authoritative server | Gives final IP |
-| 7 | Resolver | Sends IP to you |
-| 8 | Your browser | Connects to IP address |
