@@ -3,6 +3,7 @@ title: "flow state tracker"
 date: 2025-11-25T09:00:00+05:30
 level: "beginner"
 draft: false
+project_url: "https://flow-state-tracker.vercel.app/#"
 ---
 
 ## technical notes
