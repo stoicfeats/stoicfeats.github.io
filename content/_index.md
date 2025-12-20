@@ -13,7 +13,7 @@ ai engineer, polymath, soccer and nootropics
 - [projects](/projects)
 - [github](https://github.com/stoicfeats)
 - [posts](/posts)
-- [learning](/learning)
+- [notes](/notes)
     <!-- - [linkedin](https://www.linkedin.com/in/siddharthdhakaa/) -->
     <!-- - [rss](/index.xml) -->
     <!-- - [resume](/resume) -->

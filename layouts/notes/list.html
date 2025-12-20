@@ -1,0 +1,44 @@
+{{ define "main" }} {{ partial "back_link_notes.html" .}}
+
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+<div class="learning-grid">
+  {{/* If this section has subsections (like /notes/ has dentrag, genai, rag) */}}
+  {{ if .Sections }}
+    {{ range .Sections.ByWeight }}
+    <div class="learning-card">
+      <h3>
+        {{ if .Params.project_url }}
+        <a href="{{ .Params.project_url }}" target="_blank" style="font-size: 0.7em; margin-right: 0.3rem; font-weight: normal; text-decoration: none;">(app)</a>
+        {{ end }}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+      {{ if .Summary }}<p style="font-size: 0.9em; opacity: 0.8; margin-bottom: 1rem;">{{ .Summary }}</p>{{ end }}
+      
+      {{ if .Pages }}
+      <ul style="margin: 0; padding-left: 1.2rem;">
+        {{ range .Pages.ByDate }}
+        <li style="margin-bottom: 0.5rem;">
+          <a href="{{ .RelPermalink }}">{{ .Title | lower }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  {{/* If this section has no subsections, just list its pages (like /notes/dentrag/ has notes) */}}
+  {{ else }}
+    <ul style="list-style: none; padding: 0;">
+    {{ range .Pages.ByDate }}
+      <li style="margin-bottom: 1rem;">
+        <a href="{{ .RelPermalink }}" style="font-size: 1.2rem; font-weight: bold;">{{ .Title | lower }}</a>
+        <span style="display: block; font-size: 0.9rem; color: #666; margin-top: 0.2rem;">{{ .Date.Format "Jan 02, 2006" }}</span>
+      </li>
+    {{ end }}
+    </ul>
+  {{ end }}
+</div>
+{{ end }}

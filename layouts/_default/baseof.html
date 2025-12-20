@@ -4,7 +4,7 @@
 
 <body a="{{ $.Site.Params.theme_config.appearance | default " auto " }}" class="section-static">
     <main class="page-content" aria-label="Content">
-        <div class="w">
+        <div class="{{ if eq .Section "notes" }}w-wide{{ else }}w{{ end }}">
             <div class="content-wrapper">
                 {{- block "main" . }}{{- end }}
             </div>
