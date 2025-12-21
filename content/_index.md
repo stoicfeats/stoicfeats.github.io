@@ -9,11 +9,11 @@ layout = "about"
 
 ai engineer, polymath, soccer and nootropics
 
-- [wisdom](/wisdom)
 - [projects](/projects)
-- [github](https://github.com/stoicfeats)
 - [posts](/posts)
+- [github](https://github.com/stoicfeats)
 - [notes](/notes)
+- [wisdom](/wisdom)
     <!-- - [linkedin](https://www.linkedin.com/in/siddharthdhakaa/) -->
     <!-- - [rss](/index.xml) -->
     <!-- - [resume](/resume) -->

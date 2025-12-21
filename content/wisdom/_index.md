@@ -6,7 +6,7 @@ url: "/wisdom"
 aliases: ["/wisdom"]
 ---
 
-![learning_error_image](/images/learning/learn.jpg)
+![learning_error_image](/images/learning/wisdom.jpg)
 
 #### *source : tweets, quotes, books, conversations, etc.*
 
