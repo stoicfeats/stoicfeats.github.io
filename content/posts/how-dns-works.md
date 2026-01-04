@@ -4,108 +4,108 @@ date: 2025-10-25T11:31:21+05:30
 draft: false
 ---
 
-DNS, or Domain Name System, acts as the internet's phonebook. It converts easy-to-remember names like www.google.com into numerical IP addresses like 142.250.183.132 that computers use to communicate.
+DNS, or domain name system, acts as the internet's phonebook. it converts easy-to-remember names like www.google.com into numerical IP addresses like 142.250.183.132 that computers use to communicate.
 
-## Why DNS Exists
+## why DNS exists
 
-Computers communicate using IP addresses, not words. You could enter an IP directly into your browser to reach a site, but memorizing numbers for every website is impractical. DNS solves this by mapping human-friendly domain names to machine-readable IP addresses.
+computers communicate using IP addresses, not words. you could enter an IP directly into your browser to reach a site, but memorizing numbers for every website is impractical. DNS solves this by mapping human-friendly domain names to machine-readable IP addresses.
 
-## Step 1: You Enter a Website Name
+## step 1: you enter a website name
 
-You open your browser and type:
+you open your browser and type:
 
 ```
 https://www.google.com
 ```
 
-Your computer must now find the IP address for www.google.com before connecting to the server.
+your computer must now find the IP address for www.google.com before connecting to the server.
 
-## Step 2: Checking Local Cache
+## step 2: checking local cache
 
-Your computer first checks if it already knows the IP address. This process is called DNS caching.
+your computer first checks if it already knows the IP address. this process is called DNS caching.
 
-Cache locations checked in order:
+cache locations checked in order:
 
-1. Browser cache: Remembers recent visits.
-2. Operating system cache: Stores results for minutes or hours.
-3. Hosts file: A local file acting as a manual phonebook.
+1. browser cache: remembers recent visits.
+2. operating system cache: stores results for minutes or hours.
+3. hosts file: a local file acting as a manual phonebook.
 
-Example hosts file entry:
+example hosts file entry:
 
 ```
 127.0.0.1   localhost
 142.250.183.132  www.google.com
 ```
 
-If the IP is found here, the process ends and connection begins. If not, it proceeds to the next step.
+if the IP is found here, the process ends and connection begins. if not, it proceeds to the next step.
 
-## Step 3: Asking the DNS Resolver
+## step 3: asking the DNS resolver
 
-Your computer sends a query to a DNS resolver, which finds IP addresses.
+your computer sends a query to a DNS resolver, which finds IP addresses.
 
-Common resolvers:
+common resolvers:
 
-- Google: 8.8.8.8
-- Cloudflare: 1.1.1.1
+- google: 8.8.8.8
+- cloudflare: 1.1.1.1
 - ISP-provided (automatic)
 
-The query is like asking: "What is the IP for www.google.com?"
+the query is like asking: "what is the IP for www.google.com?"
 
-This uses UDP port 53 (or TCP for large responses) and travels through your router and ISP to the resolver.
+this uses UDP port 53 (or TCP for large responses) and travels through your router and ISP to the resolver.
 
-## Step 4: Resolver Checks Its Cache
+## step 4: resolver checks its cache
 
-The resolver checks its own cache, which stores millions of lookups.
+the resolver checks its own cache, which stores millions of lookups.
 
-If found, it returns the IP immediately. If not, it starts recursive resolution.
+if found, it returns the IP immediately. if not, it starts recursive resolution.
 
-## Step 5: Recursive Resolution
+## step 5: recursive resolution
 
-The resolver queries servers in sequence:
+the resolver queries servers in sequence:
 
-### a) Root DNS Servers
-There are 13 logical root servers worldwide (with mirrors).
+### a) root DNS servers
+there are 13 logical root servers worldwide (with mirrors).
 
-Query: "Who handles .com domains?"
+query: "who handles .com domains?"
 
-Response: Directs to .com TLD nameservers.
+response: directs to .com TLD nameservers.
 
-### b) TLD (Top-Level Domain) Servers
-Managed by organizations like Verisign for .com.
+### b) TLD (top-level domain) servers
+managed by organizations like verisign for .com.
 
-Query: "Who handles google.com?"
+query: "who handles google.com?"
 
-Response: Provides Google's authoritative nameservers, such as ns1.google.com and ns2.google.com.
+response: provides google's authoritative nameservers, such as ns1.google.com and ns2.google.com.
 
-### c) Authoritative DNS Server
-Google's servers hold the final records.
+### c) authoritative DNS server
+google's servers hold the final records.
 
-Query: "What is the IP for www.google.com?"
+query: "what is the IP for www.google.com?"
 
-Response: "142.250.183.132" with TTL of 300 seconds.
+response: "142.250.183.132" with TTL of 300 seconds.
 
 TTL means the result can be cached for 300 seconds.
 
-### d) Resolver Returns the Answer
-The resolver sends the IP back to your computer:
+### d) resolver returns the answer
+the resolver sends the IP back to your computer:
 
 ```
 www.google.com → 142.250.183.132
 ```
 
-## Step 6: Caching the Result
+## step 6: caching the result
 
-The IP is cached in:
+the IP is cached in:
 
-- The resolver
-- Your operating system
-- Your browser
+- the resolver
+- your operating system
+- your browser
 
-For the TTL duration, future requests use the cache without full lookup.
+for the TTL duration, future requests use the cache without full lookup.
 
-## Step 7: Browser Connects
+## step 7: browser connects
 
-With the IP, the browser proceeds to TCP connection, TLS handshake, HTTP request, and page loading. DNS only locates the server; it does not transfer data.
+with the IP, the browser proceeds to TCP connection, TLS handshake, HTTP request, and page loading. DNS only locates the server; it does not transfer data.
 
 ## DNS Workflow Summary
 
@@ -133,34 +133,34 @@ Resolver caches and returns IP
 Your PC caches and connects to 142.250.183.132
 ```
 
-## Example DNS Packet
+## example DNS packet
 
-Query to resolver:
-
-```
-Query:
-  Type: A (IPv4 Address)
-  Name: www.google.com
-```
-
-Response:
+query to resolver:
 
 ```
-Answer:
-  Name: www.google.com
-  Type: A
+query:
+  type: A (IPv4 address)
+  name: www.google.com
+```
+
+response:
+
+```
+answer:
+  name: www.google.com
+  type: A
   TTL: 300
-  Address: 142.250.183.132
+  address: 142.250.183.132
 ```
 
-## Additional Technical Details
+## additional technical details
 
 - UDP is default for speed; TCP used if response exceeds 512 bytes (e.g., with DNSSEC).
 - TTL values range from minutes to days.
-- Reverse DNS converts IP to domain, used in email and logging.
+- reverse DNS converts IP to domain, used in email and logging.
 - CNAME records alias one domain to another.
 
-Example:
+example:
 
 ```
 www.example.com → CNAME → example.com → A → 192.0.2.1

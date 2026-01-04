@@ -60,5 +60,5 @@ that's egocentric bias — you remember your own effort vividly but underestimat
 - **shared review**: discuss contributions factually in groups
 - **mindfulness**: flag "i/me"-focused judgments
 
-{{< x user="hthieblot" id="1984758840802623619">}}
+
 
