@@ -165,5 +165,3 @@ example:
 ```
 www.example.com → CNAME → example.com → A → 192.0.2.1
 ```
-
-- DNSSEC adds signatures to verify response authenticity.
