@@ -6,4 +6,3 @@ draft: false
 
 <img src="/images/roadmap/header.jpg" alt="projects_image_error">
 
-after getting proficiency can proceed [blog writing](/roadmap/blog)
