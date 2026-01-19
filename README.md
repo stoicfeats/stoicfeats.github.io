@@ -10,8 +10,6 @@ brew install hugo
 make run
 ```
 
-visit [http://localhost:1313](http://localhost:1313) in your browser.
-
 ## structure
 
 ```
