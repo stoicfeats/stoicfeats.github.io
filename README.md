@@ -22,7 +22,7 @@ content/
 │   └── rag/          # retrieval-augmented generation
 ├── wisdom/            # thoughts & insights
 └── resume/            # professional resume
-```
+```aa
 
 ## customization
 
