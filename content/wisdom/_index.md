@@ -36,4 +36,4 @@ aliases: ["/wisdom"]
 - your prime is not in your 20s. Your prime is the moment you realize nobody is coming to save you and you have to do the work on your own.
 - triple down on anything that gets you into flow state at will. running, writing, reading, or photography. design, coding, gaming, or coaching. this is your unique edge that should be sharpened and used to cut your way through the jungle. life is hard and not doing what you enjoy makes it even harder. lean into what makes you forget youre alive. help your kids lean into it. help them quench their thirst to be great at what they love. chances are success will come anyway.
 - Six months of focus can fix ten shitty years.
-- 
+- travel to learn
