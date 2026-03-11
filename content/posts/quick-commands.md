@@ -35,6 +35,6 @@ mkdir n8n-automation && cd n8n-automation && git init && touch README.md .gitign
 
 stage new changes
 
-```
+```bash
 git add . && git commit -m "initial commit: setup n8n automation repo structure"
 ```
