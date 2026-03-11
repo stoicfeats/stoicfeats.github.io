@@ -26,3 +26,15 @@ command:
 ```bash
 antigravity -r .
 ```
+
+init repo
+
+```bash
+mkdir n8n-automation && cd n8n-automation && git init && touch README.md .gitignore
+```
+
+stage new changes
+
+```
+git add . && git commit -m "initial commit: setup n8n automation repo structure"
+```
