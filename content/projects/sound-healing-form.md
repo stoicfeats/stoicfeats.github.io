@@ -1,9 +1,9 @@
 ---
-title: "sound healing form"
+title: "sound healing"
 date: 2026-01-16T12:30:00+05:30
 level: "beginner"
 draft: false
-project_url: "https://sound-healing-two.vercel.app/"
+project_url: "https://mudramind.com/"
 ---
 
 ## technical notes
